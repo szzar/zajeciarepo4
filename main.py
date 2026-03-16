@@ -15,6 +15,15 @@ class Room(BaseModel):
     name: str
     area_m2: float
 
+class TenantSettlement(BaseModel):
+    tenant_name: str          
+    current_month: int               
+    current_year: int                 
+    apartment_settlement: str 
+    rent_share: float          
+    bills_share: float     
+    total_transfers: float   
+    balance_uwu: float 
 
 class Apartment(BaseModel):
     key: str
