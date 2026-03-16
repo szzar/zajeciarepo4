@@ -23,7 +23,7 @@ class TenantSettlement(BaseModel):
     rent_share: float          
     bills_share: float     
     total_transfers: float   
-    balance_uwu: float 
+    balance: float 
 
 class Apartment(BaseModel):
     key: str
