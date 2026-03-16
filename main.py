@@ -92,6 +92,14 @@ class Bill(BaseModel):
         return [Bill(**bill) for bill in data]
 
 
+class ApartmentSettlement(BaseModel):
+    apartment: str
+    settlement_month: int
+    settlement_year: int
+    suma_rachunkow: float
+    suma_czynszow: float
+    kwota_do_uregulowania: float
+
 class Manager:
     def __init__(self, parameters: Parameters):
         self.parameters = parameters 
